@@ -52,70 +52,77 @@
 } */
 
 .container {
-    text-align: center;
-  }
-  
+  text-align: center;
+}
+
+.titel {
+  margin-top: 2em;
+  color: white;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titel span {
+  color: #26ffcb;
+  padding-left: 0.5em;
+}
+
+.reset {
+  width: 10em;
+  height: 4em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 2em;
+  background: #1f3540;
+  font-size: 1.2em;
+  color: #26ffcb;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.board {
+  max-width: 80vw; /* Limit board width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.row1,
+.row2,
+.row3 {
+  display: flex;
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vw;
+  width: 10vw;
+  max-width: 5em; /* Limit box width */
+  max-height: 5em; /* Limit box height */
+  background: #1f3540;
+  border: 4px solid #0f1b21;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.boxes img {
+  height: 3em;
+}
+
+.titel img {
+  padding: 1em;
+  height: 3em;
+}
+
+/* Media Query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
   .titel {
-    margin-top: 50px;
-    color: white;
-    font-size: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 1.5em; /* Adjust font size for mobile */
   }
-  
-  .titel span {
-    color: #26ffcb;
-    padding-left: 15px;
-  }
-  
-  .reset {
-    width: 200px;
-    height: 100px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 50px;
-    background: #1f3540;
-    font-size: 26px;
-    color: #26ffcb;
-    margin-top: 25px;
-    margin-bottom: 50px;
-  }
-  
-  .board {
-    width: 400px; /* Adjust board width */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-  }
-  
-  .row1,
-  .row2,
-  .row3 {
-    display: flex;
-  }
-  
-  .boxes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px; /* Adjust box height */
-    width: 100px; /* Adjust box width */
-    background: #1f3540;
-    border: 4px solid #0f1b21;
-    border-radius: 12px;
-    cursor: pointer;
-  }
-  
-  .boxes img {
-    height: 50px; /* Adjust image height */
-  }
-  
-  .titel img {
-    padding: 20px;
-    height: 50px;
-  }
-  
-  
+}
